@@ -36,5 +36,5 @@ foreach ($result as $row) {
 fclose($output);
 
 exit;
-header('Location: Show_search-data.php');
+header('Location: index.php');
 ?>

@@ -40,7 +40,7 @@ try {
 
         $query->execute();
 
-        header("Location: Show_search-data.php");
+        header("Location: index.php");
         exit();
     }
 } catch (PDOException $e) {

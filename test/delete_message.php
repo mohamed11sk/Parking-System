@@ -13,7 +13,7 @@ if (isset($_GET['id'])) {
         $stmt->bindValue(':id', $id);
         $stmt->execute();
 
-        header("Location: Show_search-data.php");
+        header("Location: index.php");
         exit();
     }
 }

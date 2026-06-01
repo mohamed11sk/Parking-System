@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             if ($row['name'] == $_POST['names'] and $row['password'] == $_POST['passs']) {
                 setcookie("name_cookie", $_POST["names"]);
                 setcookie("pass_cookie", $_POST["passs"]);
-                header("Location:Show_search-data.php");
+                header("Location:index.php");
                 if ((($_POST["names"]) == "admin"  and ($_POST["passs"]) == 123 ) or ($_POST['names']=="marwa"))  {
                     session_start();
                     $_SESSION["name_session"] = $_POST["names"];
